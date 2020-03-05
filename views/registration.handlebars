@@ -1,0 +1,29 @@
+<section>
+    <div class="account">
+        <h1>Create account</h1>
+    </div><br><br>
+    <div class="regis">
+        <form method="post",action="/registration">
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password">
+            <br>
+            <p class="password">* Password must consist of at least 6 characters</p>
+            <br><br>
+            <label for="password">Password Again</label><br>
+            <input type="password" id="password" name="Password">
+            <br><br>
+            <input type="submit" value="Create your Amazon account">
+            <br><br>
+            By creating an account you agree to Amazon's Condition of Use and Privacy Notice.<br><br><br><br>
+            Already have an account? <a href="/login">Sign in></a><br>
+            {{#each resErrors}}<div class="reserrors">{{this}}</div>{{/each}}
+        </form>
+    </div>
+     
+</section>~
